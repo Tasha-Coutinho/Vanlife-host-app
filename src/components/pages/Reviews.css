@@ -1,0 +1,279 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.host{
+  width: 90%;
+  flex-direction: row;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sub-host-reviews h2{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sub-host-reviews{
+  /* @media (max-width:999px) {
+    display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+  @media (min-width:800px) {
+    scale: 1.1;
+    padding-top: 60px;
+  }
+
+  @media (min-width:900px) {
+    scale: 1.13;
+    padding-top: 60px;
+  }
+
+  @media (min-width:900px) {
+    scale: 1.13;
+    padding-top: 60px;
+  }
+
+  @media (min-width:1000px) {
+    scale: 1.17;
+    padding-top: 60px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  @media (min-width:1200px) and (max-width:1400px){
+    scale: 1.195;
+    padding-top: 60px;
+  }
+
+  @media (min-width:1400px) and (max-width:1450px){
+    scale: 1.1;
+    padding-top: 60px;
+  }
+
+  @media (min-width:1700px) {
+    scale: 1.3;
+    padding-top: 60px;
+  }
+}
+
+.bg-scrn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align:start;
+  @media (max-width:1250px) {
+    display: none;
+  }
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sm-scrn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @media (min-width:1251px) {
+    display: none;
+  }
+}
+
+
+.heading-text h1{
+  @media (max-width:450px) {
+    font-size: 25px;
+  }
+}
+
+
+.heading-text{
+  flex-direction: row;
+  display:flex;
+  gap:3rem;
+
+  @media (min-width:500px) {
+    gap:12rem;
+  }
+}
+
+.icons{
+  text-align: flex-start;
+  margin-bottom: 15px;
+}
+
+.heading-text p{
+padding-top:7px;
+text-decoration: underline;
+@media (min-width:380px) {
+  padding-top:3px;
+  font-size:20px;
+  color: rgb(56, 52, 52);
+  padding-left: 30px;
+}
+
+@media (min-width:451px) {
+  padding-top:12px;
+}
+
+@media (min-width:500px) {
+  padding-left:50px;
+}
+
+}
+
+.testimonial1 h2{
+  @media (max-width:400px) {
+    font-size:18px;
+  }
+  }
+
+  .host-sec{
+    background-color:#FFF7ED ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.reviews-img{
+  background-image: url(../images/host-reviews.png);
+  background-size: cover;
+  background-position-x: center;
+  width: 255px;
+  height: 110px;
+
+  @media (min-width:351px) {
+    width: 280px;
+  height: 122px;
+  }
+
+  @media (min-width:380px) {
+    width: 340px;
+  height: 144px;
+  }
+
+  @media (min-width:420px) {
+    width: 380px;
+  height: 164px;
+  }
+
+  @media (min-width:500px) {
+    width: 430px;
+  height: 185px;
+  }
+
+  @media (min-width:530px) {
+    width: 490px;
+  height: 210px;
+  }
+
+  @media (min-width:600px) {
+    width: 530px;
+  height: 225px;
+  }
+
+  @media (min-width:1000px) {
+    width: 550px;
+  height: 235px;
+  }
+
+}
+
+.top-reviews{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width:1300px) {
+    flex-direction: row;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  }
+
+}
+.icons{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.icons i{
+  color: #FF8C38;
+  font-size: 15px;
+}
+
+.testimonial1-text p,.testimonial2-text p,.main-testimonial{
+  color: #000;
+  text-align: flex-start;
+}
+
+.testimonial2-text{
+  margin-top:20px;
+  margin-bottom:80px;
+}
+
+.testimonial2-text,.testimonial1-text{
+  color: #000;
+  @media (min-width:600px){
+    font-size: 20px;
+  }
+}
+
+
+.testimonial2-text br{
+  @media (min-width:1251px) {
+   display: none;
+  }
+}
+
+.main-testimonial{
+  @media (max-width:400px) {
+    font-size: 14px;
+  }
+}
+
+.main-testimonial{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.testifier{
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ grid-area: 1rem;
+}
+
+.testifier span{
+  color: gray;
+  margin-left: 10px;
+}
+
+.testimonial-div br{
+  @media (max-width:471px) {
+    display: none;
+  }
+}
+
+.line{
+  @media (min-width:650px) {
+    width: 580px;
+  }}
+

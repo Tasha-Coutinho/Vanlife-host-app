@@ -1,0 +1,415 @@
+
+.income-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.income-details1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right:10px;
+}
+
+
+.linkks{
+  margin-right:7px;
+  padding-right:7px;
+}
+
+
+
+
+.income-details1 p{
+  color: #000;
+}
+
+.sub-text1 h1 ,.sub-text1 h2{
+  text-align: start;
+}
+
+.vv{
+  background-color: #FFf;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  border:7px solid #FFf;
+  border-radius: 5px;
+
+  width: 98%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sub-text1{
+  background-color: #FFEAD0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-host-top-text{
+  background-color: #FFEAD0;
+}
+
+.sub-host-top-text{
+  width: 100%;
+  background-color: #FFDDB2;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+.sub-text2{
+  background-color: #FFDDB2;
+}
+
+.host-intro-heading{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.welcome-h1,.welcome-h2{
+  margin-left: 10x;
+  padding-left: 10px;
+  text-align: start;
+
+
+
+  @media (min-width:1400px){
+    font-size:35px;
+    }
+
+    @media (min-width:1500px){
+      font-size:40px;
+      }
+
+      @media (min-width:1600px){
+        font-size:45px;
+        }
+
+        @media (min-width:1700px){
+          font-size:50px;
+          }
+
+          @media (min-width:1800px){
+            font-size:55px;
+            }
+  @media (min-width:1900px) {
+    font-size: 65px;
+  }
+}
+
+.welcome-h1{
+  margin-bottom:-10px;
+
+  @media (min-width:1400px){
+    font-size:25px;
+    }
+
+    @media (min-width:1500px){
+      font-size:30px;
+      }
+
+      @media (min-width:1600px){
+        font-size:35px;
+        }
+
+        @media (min-width:1700px){
+          font-size:40px;
+          }
+
+          @media (min-width:1800px){
+            font-size:45px;
+            }
+
+
+  @media (min-width:1900px) {
+    font-size:50px;
+  }
+}
+
+.left{
+  margin-left: 10px;
+}
+
+.right{
+  margin-right: 10px;
+}
+
+
+.vans-lists{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+gap: 1rem;
+}
+
+.vans{
+  background-color: #fff;
+  width: 100%;
+  height:30vh;
+}
+
+.van-name{
+  font-size: 14px;
+  color: #000;
+  text-align: start;
+}
+
+.van-name span{
+  font-size: 12px;
+  @media (min-width:1000px){
+    font-size:20px;
+    }
+}
+
+.van-img{
+  width:70px;
+  height:70px;
+  border-radius:5px;
+  background-position-x: center;
+  background-size: cover;
+ 
+}
+
+span{
+  @media (min-width:1000px){
+    font-size:20px;
+    }
+}
+
+.van1{
+  background-image: url(../images/dreamfinder.png);
+}
+
+.van2{
+  background-image: url(../images/b-bum.png);
+}
+
+.van3{
+  background-image: url(../images/green-w.png);
+}
+
+
+.link-p-tag{
+  margin-right:30px;
+}
+
+.van-full-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.van-full-details .van-img{
+  @media (min-width:900px){
+    width:150px;
+    height:150px;
+    }
+
+    @media (min-width:1400px){
+      width:170px;
+      height:170px;
+      }
+
+      @media (min-width:1500px){
+        width:230px;
+        height:220px;
+        }
+
+        @media (min-width:1600px){
+          width:290px;
+          height:280px;
+          }
+
+          @media (min-width:1700px){
+            width:310px;
+            height:310px;
+            }
+
+            @media (min-width:1800px){
+              width:330px;
+              height:320px;
+              }
+
+              @media (min-width:1900px){
+                width:350px;
+                height:350px;
+                }
+}
+
+.van{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.van-and-details{
+  background-color: #FFf;
+  width:95%;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.linkto-details{
+  font-size: 13px;
+  @media (min-width:500px) {
+    font-size: 16px;
+  }
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  @media (min-width:1000px){
+    font-size:20px;
+    }
+}
+
+.van-full-details p{
+  @media (min-width:1000px){
+    font-size:25px;
+    }
+
+    @media (min-width:1900px){
+      font-size:40px;
+      }
+}
+
+.van .van-name span{
+  font-weight: lighter;
+
+  @media (min-width:1300px){
+    font-size:18px;
+    }
+
+  @media (min-width:1400px){
+    font-size:20px;
+    }
+
+    @media (min-width:1500px){
+      font-size:23px;
+      }
+
+        @media (min-width:1600px){
+          font-size:23px;
+          }
+
+          @media (min-width:1700px){
+            font-size:23px;
+            }
+
+
+  @media (min-width:1800px) {
+    font-size:25px;
+  }
+
+
+  @media (min-width:1900px){
+    font-size:30px;
+    }
+
+
+  @media (min-width:1900px){
+    font-size:30px;
+    }
+
+
+}
+
+.link-p-tag a,.linkto-details,.income-details1 p{
+
+  @media (min-width:1300px){
+    font-size:18px;
+    }
+
+  @media (min-width:1400px){
+    font-size:20px;
+    }
+
+    @media (min-width:1500px){
+      font-size:23px;
+      }
+
+        @media (min-width:1600px){
+          font-size:23px;
+          }
+
+          @media (min-width:1700px){
+            font-size:23px;
+            }
+  @media (min-width:1800px) {
+    font-size:25px;
+  }
+
+  @media (min-width:1900px){
+    font-size:30px;
+    }
+}
+
+.sub-host-top-text .left,.income-details1 h3{
+
+
+  @media (min-width:1300px){
+    font-size:25px;
+    }
+
+  @media (min-width:1400px){
+    font-size:27px;
+    }
+
+    @media (min-width:1500px){
+      font-size:27px;
+      }
+
+        @media (min-width:1600px){
+          font-size:30px;
+          }
+
+          @media (min-width:1700px){
+            font-size:32px;
+            }
+
+
+  @media (min-width:1800px){
+    font-size:35px;
+    }
+
+  @media (min-width:1900px){
+    font-size:37px;
+    } 
+}
+
+.main-host{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF7ED;
+}
+
+.fa-star{
+  color: #FF8C38;
+  font-size:1px;
+}
+
+.sub-host{
+  width: 100%;
+}

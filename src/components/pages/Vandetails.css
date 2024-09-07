@@ -1,0 +1,212 @@
+.active {
+  text-decoration: underline;
+  color: #252525;
+}
+
+.van-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF7ED;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+}
+
+.van-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-size: 1rem;
+  @media (max-width: 430px) {
+  gap: 0.5rem;
+  }
+}
+
+@media (max-width: 469px) {
+  .van-nav ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 470px) {
+  .van-nav ul {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .van-nav ul {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .van-nav ul {
+    font-size: 30px;
+  }
+}
+
+.van-nav ul li a {
+  display: block;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  margin: 0 0.2rem;
+  text-decoration: none;
+}
+
+.Rugged a {
+  width: 60px;
+}
+
+@media (min-width: 401px) {
+  .Rugged a {
+    width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Rugged a {
+    margin-left: 5px;
+  }
+}
+
+.Luxury a {
+  width: 60px;
+}
+
+@media (min-width: 401px) {
+  .Luxury a {
+    width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Luxury a {
+    margin-left: 7px;
+  }
+}
+
+.simple a {
+  width: 60px;
+}
+
+@media (min-width: 401px) {
+  .simple a {
+    width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .simple a {
+    margin-left: -27px;
+  }
+}
+
+.van-nav ul li a:not(.active) {
+  background-color: rgba(253, 253, 253, 0);
+}
+
+.simple a:hover {
+  color: #FFEAD0;
+}
+
+.Luxury a:hover {
+  color: #FFEAD0;
+}
+
+.rugged a:hover {
+  background-color: #115E59;
+  color: #FFEAD0;
+}
+
+.clear a:hover {
+  background-color: #115e5900;
+  text-decoration: underline;
+}
+
+.clear {
+  margin-top: 3px;
+}
+
+@media (min-width: 401px) {
+  .clear {
+    width: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .clear {
+    margin-left: 7px;
+  }
+}
+.rugged,.simple,.luxury{
+  width: 80px;
+  height: 40px;
+  background-color: #FFEAD0;
+  border-radius: 0.3rem;
+  @media (max-width: 400px) {
+    height:30px;
+    width:60px;
+}}
+
+.simple{
+  @media (max-width:400px) {
+  margin-left:-38px;
+}
+@media (max-width: 400px) {
+  width:70px;
+  height:30px;
+}
+}
+
+.rugged:hover{
+  background-color:#161616;
+}
+
+.simple:hover{
+  background-color:#E17654;
+}
+
+.simple:active{
+  background-color:#E17654;
+}
+.luxury:hover{
+  background-color:#115E59;
+}
+
+.van-nav .clear-filters a {
+  text-decoration: underline;
+}
+
+.van-nav .active.simple {
+  background-color: #E17654;
+}
+
+.van-nav .active.luxury {
+  background-color: #161616;
+}
+
+.van-nav .rugged-btn.active {
+  background-color: #115E59;
+}
+
+.clear-filters{
+  background-color: transparent;
+}
+
+.mobile a,.mobile span{
+  color: transparent;
+}
+
+.mobile a:hover{
+  color: transparent;
+}
+
+.mobile{
+  color: transparent;
+}
+
+.mobile:hover{
+  color: transparent;
+}
