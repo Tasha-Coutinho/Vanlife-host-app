@@ -1,3 +1,4 @@
+//host income.jsx
 import React from "react";
 import "./Income.css"
 
