@@ -1,8 +1,10 @@
-//src/firebase/firebase.js
+
+// firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore"; // Firestore import
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyB5XKBqRj0-B8Ie4HC7dvvarF8bQlWmg0k",
   authDomain: "vanlife-carrental-app2-auth.firebaseapp.com",
@@ -14,6 +16,11 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
-export {app , auth};
+// Initialize Firestore (for database)
+const db = getFirestore(app);
+
+export { auth, db };

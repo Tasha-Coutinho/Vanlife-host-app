@@ -1,67 +1,48 @@
 import React from "react";
-import "./Vans.css"
+import { doc, updateDoc } from "firebase/firestore";
 import { Link } from "react-router-dom";
+import { db } from "../../firebase/firebase"; 
+import "./Vans.css";
 
-export const Vans = () =>{
-  return <div>
+export const Vans = () => {
+  const vans = [
+    { id: 1, name: "Modest Explorer", price: "$60/day", image: "van1" },
+    { id: 2, name: "Beach Bum", price: "$80/day", image: "van2" },
+    { id: 3, name: "Green Wonder", price: "$70/day", image: "van3" }
+  ];
+
+  const updateVanDetails = async (vanId, newData) => {
+    const vanDoc = doc(db, "vans", vanId);
+    await updateDoc(vanDoc, newData);
+  };
+
+  return (
     <div className="vans-lists">
-    <div className="income-details1 sub-text3">
-      <h3>Your listed vans</h3>
-      <p><a href="" className="linkto-details linkks">View all</a></p>
+      <div className="income-details1 sub-text3">
+        <h3>Your listed vans</h3>
+        <p><a href="" className="linkto-details linkks">View all</a></p>
+      </div>
+
+      {vans.map((van) => (
+        <Link to="/vandetails" key={van.id}>
+          <div className="sub-host-top-text vans">
+            <h3 className="left">
+              <div className="van-full-details">
+                <div className={`van-img ${van.image}`}></div> {/* Use van.image */}
+                <div className="van">
+                  <p className="van-name">
+                    {van.name} <br />
+                    <span>{van.price}</span>
+                  </p>
+                </div>
+              </div>
+            </h3>
+            <p className="link-p-tag">
+              <a href="" className="linkto-details" onClick={() => updateVanDetails(van.id, { name: "New Name", price: "$100/day" })}>Edit</a>
+            </p>
+          </div>
+        </Link>
+      ))}
     </div>
-
-    <Link to="/vandetails">
-<div className="sub-host-top-text vans">
-      <h3 className="left">  
-<div className="van-full-details">
-<a href="./Van1.jsx">
-<div className="van-img van1"></div>
-</a>
-<div className="van">
-<p className="van-name">
-  Modest Explorer <br /><span>$60/day</span>
-</p>
-</div>
-</div>
-</h3>
-<p className="link-p-tag"><a href="" className="linkto-details">Edit</a></p>
-    </div>
-    </Link>
-{/* <!-- van2 --> */}
-
-<div className="sub-host-top-text vans">
-      <h3 className="left">  
-<div className="van-full-details">
-<div className="van-img van2"></div>
-<div className="van">
-<p className="van-name">
-  Beach Bum <br /><span>$80/day</span>
-</p>
-</div>
-
-</div>
-</h3>
-<p className="link-p-tag"><a href="" className="linkto-details">Edit</a></p>
-    </div>
-
-{/* <!-- van3 --> */}
-
-<div className="sub-host-top-text vans">
-      <h3 className="left">  
-<div className="van-full-details">
-<div className="van-img van3"></div>
-<div className="van">
-<p className="van-name">
-  Green Wonder <br /><span>$70/day</span>
-</p>
-</div>
-</div>
-</h3>
-<p className="link-p-tag"><a href="" className="linkto-details">Edit</a></p>
-    </div>
-
-{/* <!-- end --> */}
-
-    </div>
-  </div>;
+  );
 };
